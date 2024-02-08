@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: blueviolet;
+  font-family: "VT323", monospace;
+}
+
+.i {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 25px;
+  filter: blur(1px);
+  z-index: 2;
+}
+
+.i:hover {
+  background: rgb(80, 5, 137);
+  border-radius: 50%;
+}
+
+.itens {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  position: absolute;
+  top: 2%;
+  left: 7%;
+  padding: 10px;
+  border-radius: 8px;
+  align-items: center;
+}
+
+.itens img {
+  animation: orbitar 12s linear infinite;
+}
+
+button {
+  width: 200px;
+  height: 40px;
+  font-size: x-large;
+  font-weight: 400;
+  font-family: "VT323", monospace;
+}
+
+.botoes {
+  background: rgb(70, 7, 118);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 450px;
+  height: 80px;
+  gap: 10px;
+  margin-top: 80px;
+  border-radius: 7px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+#imagemGato img {
+  max-width: 500px;
+  max-height: 500px;
+  margin-top: 140px;
+  border-radius: 20px;
+  position: relative;
+  right: -60%;
+  box-shadow: 0px 0px 10px 5px rgb(60, 16, 94);
+}
+
+.body2 {
+  background-image: url(gifs-de-hipnose-19.gif);
+  background: url(gifs-de-hipnose-19.gif) top center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.faladiv {
+  width: 100vw;
+  height: 100vh;
+}
+
+.fala {
+  position: absolute;
+  top: 49%;
+  right: 30%;
+  text-align: center;
+  color: white;
+}
+
+#img {
+  position: absolute;
+  right: 54%;
+  bottom: 30%;
+}
+
+#img img {
+  position: absolute;
+
+  margin-bottom: 20px;
+  width: 100px;
+}
+
+@keyframes orbitar {
+  0% {
+    transform: rotate(0deg) translateX(100px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translateX(100px) rotate(-360deg);
+  }
+}
